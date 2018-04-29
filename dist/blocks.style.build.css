@@ -1,0 +1,26 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.wp-block-wpjj-call-to-action-block {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .wp-block-wpjj-call-to-action-block .CTA-Button {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 4px 8px;
+    margin-top: 20px;
+    margin-bottom: 10px; }

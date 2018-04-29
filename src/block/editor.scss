@@ -1,0 +1,24 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.wp-block-wpjj-call-to-action-block{
+  	text-align: center;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .CTA-Button{
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      padding: 4px 8px;
+      margin-top:20px;
+      margin-bottom: 10px;
+    }
+}
