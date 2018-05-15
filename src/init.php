@@ -62,3 +62,33 @@ function call_to_action_chicago_cgb_editor_assets() {
 
 // Hook: Editor assets.
 add_action( 'enqueue_block_editor_assets', 'call_to_action_chicago_cgb_editor_assets' );
+
+
+function mytheme_setup_theme_supported_features() {
+
+	add_theme_support( 'editor-color-palette',
+		array(
+			'name' => 'Lime Green',
+			'color' => '#76D13A',
+			),
+		array(
+			'name' => 'Off Black',
+			'color' => '#1E1F1D',
+		),
+		array(
+			'name' => 'Dark Gray',
+			'color' => '#999999',
+		),
+		array(
+			'name' => 'Light Gray',
+			'color' => '#D9D9D9',
+		),
+		array(
+			'name' => 'Charcoal',
+			'color' => '#313131',
+		)
+	);
+}
+
+
+add_action( 'after_setup_theme', 'mytheme_setup_theme_supported_features' );

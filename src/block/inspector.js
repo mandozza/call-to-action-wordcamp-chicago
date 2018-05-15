@@ -14,6 +14,10 @@ const {
     RangeControl,
 } = wp.components;
 
+console.log('Inspector Loaded99');
+console.log('break 999');
+
+
 /**
  * Create an Inspector Controls wrapper Component
  */

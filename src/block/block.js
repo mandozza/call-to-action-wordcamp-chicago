@@ -41,7 +41,6 @@ const { Button} = wp.components;
 	],
 
 	/* define the attributes to be used in our block*/
-
 	attributes:{
 		message:{
 			type: 'array',
@@ -174,7 +173,9 @@ const { Button} = wp.components;
 
 		return [
 
-			!!props.focus && (
+			!!focus && (
+
+
 				<Inspector
 					{...{
 						onChangeBackgroundColor,
@@ -271,13 +272,17 @@ const { Button} = wp.components;
 						color: props.attributes.TitleColor
 					}}
 				>
-				{props.attributes.title}</h2>
-				<div class="message-body"
-					style={{
-						color: props.attributes.MessageColor
-					}}
+				{props.attributes.title}
+				</h2>
+
+				<div class = "message-body"
+					style = {{
+							color: props.attributes.MessageColor
+						}}
 				>
-				<div>{props.attributes.message}</div>
+				{ props.attributes.message}
+				< /div>
+
 
 					<div className="Button_Holder">
 						<div className="CTA-Button"
@@ -295,7 +300,7 @@ const { Button} = wp.components;
 							</span>
 						</div>
 					</div>
-				</div>
+
 			</div>
 		);
 	},
